@@ -39,7 +39,7 @@ function Tile({ value, index, onMove }: Props) {
   };
 
   function onDragEnd(e: React.DragEvent<HTMLElement>) {
-    e.target.style.border = "solid var(--tile-border-color)";
+    e.currentTarget.style.border = "solid var(--tile-border-color)";
   }
 
   function onDragLeave(e: React.DragEvent<HTMLElement>) {
