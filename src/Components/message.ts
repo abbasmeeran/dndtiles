@@ -26,7 +26,7 @@ export function orderMessagesByDate(messages: Message[]) {
   orderedMessages.sort((msg1, msg2) => {
     const date1 = new Date(msg1.date);
     const date2 = new Date(msg2.date);
-    return date1.getFullYear() - date2.getFullYear();
+    return date1.getTime() - date2.getTime();
   });
   return orderedMessages;
 }

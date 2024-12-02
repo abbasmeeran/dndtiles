@@ -1,4 +1,4 @@
-import React, { CSSProperties, useState } from "react";
+import React from "react";
 import { Message } from "../message";
 
 export type TileData = {

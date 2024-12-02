@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { getMessages, Message, orderMessagesByDate } from "../message";
-import MyGrid from "../Grid";
+import Grid from "../Grid";
 import TileForm from "../TileForm";
 import { TileData } from "../Tile";
 
@@ -80,7 +80,7 @@ function Container({ rows = 3, cols = 3 }: Props) {
       </div>
 
       {tiles.length && (
-        <MyGrid messages={tiles} rows={rows} cols={cols} onMove={onMove} />
+        <Grid messages={tiles} rows={rows} cols={cols} onMove={onMove} />
       )}
       <TileForm dialogRef={dialogRef} onSave={onSave} />
     </div>
