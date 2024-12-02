@@ -14,7 +14,7 @@ type Props = {
 function Tile({ value, index, onMove }: Props) {
   const { message, date } = value || {};
 
-  const onDrag: any = (e: React.MouseEvent) => {};
+  const onDrag: any = () => {};
 
   const handleDrop = (e: React.DragEvent) => {
     const eventData = e.dataTransfer.getData("text/json");
