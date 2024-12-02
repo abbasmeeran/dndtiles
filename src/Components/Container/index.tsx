@@ -56,25 +56,13 @@ function Container({ rows = 3, cols = 3 }: Props) {
         Draggable Tiles
       </h1>
       <div className="">
-        <button
-          id="init"
-          onClick={reset}
-          className="bg-sky-500 p-2 rounded-md font-medium m-2 w-32"
-        >
+        <button id="init" onClick={reset} className="button">
           Iniital Order
         </button>
-        <button
-          id="order"
-          onClick={orderMessages}
-          className="bg-sky-500 p-2 rounded-md font-medium m-2 w-32"
-        >
+        <button id="order" onClick={orderMessages} className="button">
           Sorted Order
         </button>
-        <button
-          id="order"
-          onClick={addTile}
-          className="bg-sky-500 p-2 rounded-md font-medium m-2 w-32"
-        >
+        <button id="order" onClick={addTile} className="button">
           Add
         </button>
       </div>

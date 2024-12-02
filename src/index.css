@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  :root {
+    --drop-color: theme("colors.sky.500");
+    --tile-border-color: theme("colors.stone.700");
+    --tile-bg-color: theme("colors.sky.100");
+  }
+  .button {
+    @apply bg-sky-500 p-2 rounded-md font-medium m-2 w-32;
+  }
+  .tile {
+    @apply border-2 border-stone-700 rounded-lg flex flex-col justify-center h-16 mb-2 bg-sky-100;
+  }
+}
