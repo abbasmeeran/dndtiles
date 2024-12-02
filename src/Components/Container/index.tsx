@@ -44,7 +44,7 @@ function Container({ rows = 3, cols = 3 }: Props) {
   };
 
   const onMove = (src: TileData, target: TileData) => {
-    const newMessages = [...messages];
+    const newMessages = [...tiles];
     newMessages.splice(src.index, 1);
     src.message && newMessages.splice(target.index, 0, src.message);
     setTiles(newMessages);

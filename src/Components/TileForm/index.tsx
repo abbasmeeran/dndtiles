@@ -32,7 +32,7 @@ function TileForm({ dialogRef, onSave }: Props) {
 
   const toggleDialog = (open: boolean) => {
     if (dialogRef.current) {
-      if (open) {
+      if (!open) {
         setDate("");
         setMessage("");
       }
