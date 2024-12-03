@@ -1,5 +1,6 @@
 import React from "react";
 import { Message } from "../message";
+import { BeakerIcon, EnvelopeIcon } from "@heroicons/react/16/solid";
 
 export type TileData = {
   message?: Message;
@@ -57,8 +58,11 @@ function Tile({ value, index, onMove }: Props) {
       onDragEnd={onDragEnd}
       onDragLeave={onDragLeave}
     >
-      <div className="ml-2">{date}</div>
-      <div className="flex justify-center">{message}</div>
+      <div className="ml-2 flex justify-start">
+        <EnvelopeIcon className="size-3 text-blue-950 mr-2 text-wrap self-center" />
+        <div>{date}</div>
+      </div>
+      <div className="flex justify-center text-wrap">{message}</div>
     </div>
   );
 }

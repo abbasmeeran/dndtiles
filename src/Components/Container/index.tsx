@@ -51,20 +51,22 @@ function Container({ rows = 3, cols = 3 }: Props) {
   };
 
   return (
-    <div className="m-2">
-      <h1 className="text-3xl font-bold underline mb-3 flex justify-center">
-        Draggable Tiles
-      </h1>
-      <div className="">
-        <button id="init" onClick={reset} className="button">
-          Iniital Order
-        </button>
-        <button id="order" onClick={orderMessages} className="button">
-          Sorted Order
-        </button>
-        <button id="order" onClick={addTile} className="button">
-          Add
-        </button>
+    <div className="m-3">
+      <div className="flex flex-col md:flex-row justify-start border-b-2 border-cyan-900">
+        <h1 className="text-3xl font-bold flex items-center flex-1 m-2">
+          Draggable Tiles
+        </h1>
+        <div className="flex md:flex-row flex-col items-stretch">
+          <button id="init" onClick={reset} className="button">
+            Iniital Order
+          </button>
+          <button id="order" onClick={orderMessages} className="button">
+            Sorted Order
+          </button>
+          <button id="order" onClick={addTile} className="button">
+            Add
+          </button>
+        </div>
       </div>
 
       {tiles.length && (

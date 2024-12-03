@@ -9,9 +9,29 @@
     --tile-bg-color: theme("colors.sky.100");
   }
   .button {
-    @apply bg-sky-500 p-2 rounded-md font-medium m-2 w-32;
+    @apply bg-sky-500 p-2 rounded-md font-medium m-2 min-w-32 border-2 border-sky-600;
   }
   .tile {
-    @apply border-2 border-stone-700 rounded-lg flex flex-col justify-center h-16 mb-2 bg-sky-100;
+    @apply border-2 app-border rounded-lg flex flex-col justify-center h-16 mb-2 bg-sky-100 cursor-pointer;
+  }
+
+  .tiles-grid {
+    @apply grid-cols-2 !important;
+  }
+
+  .app-border {
+    @apply border-2 border-slate-500;
+  }
+
+  .error {
+    @apply border-2 !border-red-600 focus:outline-none;
+  }
+
+  .form-input {
+    @apply px-2 h-[2.5rem] app-border rounded-md;
+  }
+
+  .error-message {
+    @apply text-red-600 text-[0.9rem] my-1;
   }
 }
