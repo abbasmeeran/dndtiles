@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
+# Drag and Drop Tiles
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bootstrapped using Vite Reat-ts template
 
-Currently, two official plugins are available:
+## Libraries Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React, Tailwind CSS, Hero Icons HTML5 Drag and Drop events, Native Dialog element
 
-## Expanding the ESLint configuration
+## Components
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![alt text](Isolated.png "Title")
 
-- Configure the top-level `parserOptions` property like this:
+### [Container.tsx](https://github.com/abbasmeeran/dndtiles/blob/main/src/Components/Container/index.tsx)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+    The parent Container component fetch and updates the tiles data
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### [Grid.tsx](https://github.com/abbasmeeran/dndtiles/blob/main/src/Components/Grid/index.tsx)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+    Grid with dynamic rows and cols to display the tiles
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### [Tile.tsx](https://github.com/abbasmeeran/dndtiles/blob/main/src/Components/Tile/index.tsx)
+
+    Tile displays the messagew with with Drag and drop support
+
+### [TileForm.tsx](https://github.com/abbasmeeran/dndtiles/blob/main/src/Components/TileForm/index.tsx)
+
+    A Dialog has a form with onputs for messag e and date to add new tile
+
+### [Messages.js](https://github.com/abbasmeeran/dndtiles/blob/main/src/Components/message.ts)
+
+    Types and APIs to manage the messages

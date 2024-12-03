@@ -4,7 +4,7 @@
 
 @layer components {
   :root {
-    --drop-color: theme("colors.violet.700");
+    --drop-color: theme("colors.violet.500");
     --tile-border-color: theme("colors.violet.800");
     --tile-bg-color: theme("colors.violet.200");
   }

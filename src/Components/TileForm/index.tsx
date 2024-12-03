@@ -117,7 +117,7 @@ function TileForm({ dialogRef, onSave }: Props) {
           </button>
           <button
             onClick={onCancel}
-            className="button w-20 bg-gray-300 text-black"
+            className="button w-20 bg-purple-100 text-black"
           >
             Cancel
           </button>
