@@ -5,7 +5,7 @@
 @layer components {
   :root {
     --drop-color: theme("colors.violet.500");
-    --tile-border-color: theme("colors.violet.800");
+    --tile-border-color: theme("colors.slate.500");
     --tile-bg-color: theme("colors.violet.200");
   }
   .button {
