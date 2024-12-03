@@ -8,7 +8,7 @@ React, Tailwind CSS, Hero Icons HTML5 Drag and Drop events, Native Dialog elemen
 
 ## Components
 
-![alt text](Isolated.png "Title")
+![alt text](dndtiles.png "Title")
 
 ### [Container.tsx](https://github.com/abbasmeeran/dndtiles/blob/main/src/Components/Container/index.tsx)
 
