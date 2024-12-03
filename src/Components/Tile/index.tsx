@@ -1,6 +1,6 @@
 import React from "react";
 import { Message } from "../message";
-import { BeakerIcon, EnvelopeIcon } from "@heroicons/react/16/solid";
+import { EnvelopeIcon } from "@heroicons/react/16/solid";
 
 export type TileData = {
   message?: Message;
