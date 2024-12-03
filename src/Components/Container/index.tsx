@@ -58,7 +58,7 @@ function Container({ rows = 3, cols = 3 }: Props) {
         </h1>
         <div className="flex md:flex-row flex-col items-stretch">
           <button id="init" onClick={reset} className="button">
-            Iniital Order
+            Iniitial Order
           </button>
           <button id="order" onClick={orderMessages} className="button">
             Sorted Order

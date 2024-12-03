@@ -59,7 +59,7 @@ function Tile({ value, index, onMove }: Props) {
       onDragLeave={onDragLeave}
     >
       <div className="ml-2 flex justify-start">
-        <EnvelopeIcon className="size-3 text-blue-950 mr-2 text-wrap self-center" />
+        <EnvelopeIcon className="size-3 text-purple-800 mr-2 text-wrap self-center" />
         <div>{date}</div>
       </div>
       <div className="flex justify-center text-wrap">{message}</div>

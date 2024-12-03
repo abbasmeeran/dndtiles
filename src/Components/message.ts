@@ -2,7 +2,7 @@ export type Message = Record<"date" | "message", string>;
 
 export type MessagesByYear = { [key: number]: Message[] };
 
-export const input: Message[] = [
+const input: Message[] = [
   { date: "2021-06-21", message: "message D" },
   { date: "2020-06-18", message: "message A" },
   { date: "2021-06-20", message: "message C" },
@@ -18,7 +18,7 @@ export const input: Message[] = [
 ];
 
 export function getMessages() {
-  return [...input];
+  return JSON.parse(JSON.stringify(input));
 }
 
 export function orderMessagesByDate(messages: Message[]) {
@@ -26,7 +26,7 @@ export function orderMessagesByDate(messages: Message[]) {
   orderedMessages.sort((msg1, msg2) => {
     const date1 = new Date(msg1.date);
     const date2 = new Date(msg2.date);
-    return date1.getTime() - date2.getTime();
+    return date2.getTime() - date1.getTime();
   });
   return orderedMessages;
 }

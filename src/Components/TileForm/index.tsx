@@ -71,11 +71,11 @@ function TileForm({ dialogRef, onSave }: Props) {
       ref={dialogRef}
       className="mx-auto my-40 app-border rounded-md md:w-[40%] w-[100%]"
     >
-      <div className="bg-sky-100 h-10 flex items-center p-2 ">
+      <div className="bg-violet-200 h-12 flex items-center p-2 ">
         <h1 className="font-bold text-lg flex-1">Add Tile</h1>
         <button className="flex-1 justify-items-end m-2">
           <XCircleIcon
-            className="size-5 cursor-pointer"
+            className="size-5 cursor-pointer text-violet-800"
             onClick={(e: React.MouseEvent) => {
               e.preventDefault();
               toggleDialog(false);
@@ -115,7 +115,10 @@ function TileForm({ dialogRef, onSave }: Props) {
           <button onClick={onSaveClick} className="button w-20">
             Save
           </button>
-          <button onClick={onCancel} className="button w-20">
+          <button
+            onClick={onCancel}
+            className="button w-20 bg-gray-300 text-black"
+          >
             Cancel
           </button>
         </div>

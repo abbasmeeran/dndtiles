@@ -4,15 +4,15 @@
 
 @layer components {
   :root {
-    --drop-color: theme("colors.sky.500");
-    --tile-border-color: theme("colors.stone.700");
-    --tile-bg-color: theme("colors.sky.100");
+    --drop-color: theme("colors.violet.700");
+    --tile-border-color: theme("colors.violet.800");
+    --tile-bg-color: theme("colors.violet.200");
   }
   .button {
-    @apply bg-sky-500 p-2 rounded-md font-medium m-2 min-w-32 border-2 border-sky-600;
+    @apply bg-violet-500 p-2 rounded-md font-medium m-2 min-w-32 border-2 border-violet-800 text-white;
   }
   .tile {
-    @apply border-2 app-border rounded-lg flex flex-col justify-center h-16 mb-2 bg-sky-100 cursor-pointer;
+    @apply border-2 app-border rounded-lg flex flex-col justify-center h-16 mb-2 bg-violet-200 cursor-pointer;
   }
 
   .tiles-grid {
