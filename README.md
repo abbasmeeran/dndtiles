@@ -1,6 +1,6 @@
 # Drag and Drop Tiles
 
-Bootstrapped using Vite Reat-ts template
+Bootstrapped using Vite React-ts template
 
 ## Libraries Used
 
